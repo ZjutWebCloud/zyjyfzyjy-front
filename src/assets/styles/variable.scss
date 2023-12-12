@@ -1,0 +1,28 @@
+$container_width: 1400px;
+$theme_color: #448aca;
+$header_height: 110px;
+$footer_height: 150px;
+$footer_color: #302a29;
+$news_color: #999;
+$menu_height: 110px;
+$slider_height: 700px;
+$bg_color: #ffffff;
+$title_color:#448aca;
+
+@mixin overLine($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+}
+.clearfix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  *height: 1%;
+}
